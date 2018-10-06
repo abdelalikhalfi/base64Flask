@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/decode" method="POST">
+    Enter the text you want to decode to Base64 :
+    <input type="text" name="text">
+    <input type="submit" name="submit">
+</form>
+<br>
+{{ html }}
+{% endblock %}
